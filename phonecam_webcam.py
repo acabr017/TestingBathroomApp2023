@@ -33,7 +33,7 @@ cam.release()
 
 cv2.destroyAllWindows()
 #--------------------------------------------------------------------------------
-pytesseract.pytesseract.tesseract_cmd = 'tesseract - Shortcut.lnk'
+pytesseract.pytesseract.tesseract_cmd = 'Tesseract-OCR\tesseract.exe'
 
 img = cv2.imread(f"{img_name}")
 
