@@ -1,6 +1,6 @@
 website template?: https://sites.google.com/view/bathroom2023/home 
 
-uses the "IP webcam" app to get camera info (android & ios)
+will use the "IP webcam" app to get camera info (android & ios)
 
 run "pip install -r requirements.txt"
 
