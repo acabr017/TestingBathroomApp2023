@@ -10,6 +10,8 @@ cv2.namedWindow("test")
 img_counter = 0
 
 while True:
+    time_elapse = time.time()
+    print(time_elapse)
     ret, frame = cam.read()
     if not ret:
         print("failed to grab frame")
