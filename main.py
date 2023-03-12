@@ -1,8 +1,9 @@
-import cv2, os, pytesseract
+import cv2, os, pytesseract, urllib.request
 
 if os.path.exists("opencv_frame_0.png"):
     os.remove("opencv_frame_0.png")
 #--------------------------------------------------------------------------------
+
 cam = cv2.VideoCapture(0)
 
 cv2.namedWindow("test")
@@ -34,6 +35,7 @@ while True:
 cam.release()
 
 cv2.destroyAllWindows()
+
 #--------------------------------------------------------------------------------
 pytesseract.pytesseract.tesseract_cmd = 'Tesseract-OCR\\tesseract.exe'
 
