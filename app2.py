@@ -4,14 +4,14 @@ from authlib.integrations.flask_client import OAuth
 
 app = Flask(__name__)
 app.register_blueprint(views, url_prefix="/")
-app.secret_key = '714e1eb705c43b09a498eb4e22e1de32'
+app.secret_key = ''
 
 #oauth config
 oauth = OAuth(app)
 google = oauth.register(
     name='google',
-    client_id='607824139544-0on2v47n2qs94u7dqr2rullncd0qt64n.apps.googleusercontent.com',
-    client_secret='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',
+    client_id='',
+    client_secret='',
     access_token_url='https://accounts.google.com/o/oauth2/token/',
     access_token_params=None,
     authorize_url='https://accounts.google.com/o/oauth2/auth',
