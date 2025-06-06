@@ -1,6 +1,6 @@
 import cv2
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture('https://192.168.1.73:8080/video')
 
 cv2.namedWindow("test")
 
@@ -11,7 +11,7 @@ while True:
     if not ret:
         print("failed to grab frame")
         break
-    cv2.imshow("test", frame)
+    cv2.imshow("test", cv2.resize((cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)), (240,320)))
 
     k = cv2.waitKey(1)
     if k%256 == 27:

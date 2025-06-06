@@ -4,7 +4,7 @@ website hosting?: https://app.infinityfree.net/accounts
 
 will use the "IP webcam" app to get camera info (android & ios)
 
-run "pip install -r requirements.txt"
+run "pip install -r reqs.txt"
 
 1. run the webcam_test_2.p
 2. take your photo
